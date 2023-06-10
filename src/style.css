@@ -9,7 +9,7 @@
   --background-header: #1e1e1e;
   --background-body: #fff;
   --text-color: #fff;
-  --box-animate: #0850A6;
+  --box-animate: #0850a6;
   --font-actor: 'Actor', sans-serif;
   --font-lily: 'Lily Script One', cursive;
 }
@@ -52,7 +52,7 @@ li a {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  transition: .35s;
+  transition: 0.35s;
 }
 
 li {
@@ -62,7 +62,7 @@ li {
 }
 
 li::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   bottom: -4px;
   height: 4px;
@@ -72,7 +72,7 @@ li::before {
 }
 
 li:hover::before {
-  content: "teste ";
+  content: 'teste ';
   position: absolute;
   z-index: 1000;
   bottom: -4px;
@@ -83,7 +83,7 @@ li:hover::before {
 }
 
 ul:hover > :not(:hover) {
-  opacity: .4;
+  opacity: 0.4;
   transform: scale(0.9);
 }
 
@@ -111,6 +111,18 @@ section {
   margin-bottom: 157px;
 
   background-color: var();
+}
+
+@media (max-width: 1024px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: auto;
+  }
 }
 
 .card-img {
