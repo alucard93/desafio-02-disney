@@ -72,7 +72,7 @@ li::before {
 }
 
 li:hover::before {
-  content: 'teste ';
+  content: ' ';
   position: absolute;
   z-index: 1000;
   bottom: -4px;
